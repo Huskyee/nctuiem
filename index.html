@@ -5,26 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NCTU IEM</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div>
-        <a href="index.html">
-                <h1><b>NCTU IEM</b></h1>
-                <h5>National Chiao Tung University Industrial Engineering and Management</h5>
-        </a>
-    </div>
 
+    <nav id="overlay">
+        <img src="images/Close.svg" class="close-btn" id="close-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <a class="logo">
+                <h1>
+                    <b><a href="index.html">NCTU IEM</a></b>
+                    <img href="#" src="images/Menu.svg" class="menu-btn" id="open-menu">
+                </h1>
+                <h5><a href="index.html">National Chiao Tung University</a></h5>
+                <h5><a href="index.html">Industrial Engineering and Management</a></h5>
+        </a>
+        
+    </header>
+
+    <section>
+        <h1 class="content">Test</h1>
+    </section>
+
+    <script>
     
-    <div class="list">
-        <div class="menu"><a href="index.html"><b>Home</b></a></div>
-        <div class="menu"><a href="#"><b>About</b></a></div>
-        <div class="menu"><a href="#"><b>Services</b></a></div>
-        <div class="menu"><a href="#"><b>Contact</b></a></div>
-    </div>
-    <div class="bottom">
-        <div class="copyright">Copyright &copy; 2019 Chao Kuo Chiu. All rights reserved.</div>
-    </div>
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
+
+        document.getElementById('open-menu').addEventListener('click', function(){
+            overlay.classList.add('show-menu');
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function(){
+            overlay.classList.remove('show-menu');
+        });
+    </script>
+    
+    
+    
+    
+    
+
     
     
 </body>
