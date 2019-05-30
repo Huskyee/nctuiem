@@ -1,5 +1,5 @@
 body, html {
-  font-family: Bodoni MT;
+  font-family: 'Abril Fatface', cursive;
   margin: 0%;
   height: 100%;
   width: 100%;
@@ -41,7 +41,7 @@ header h5 {
 }
 
 section {
-  margin-top: 7.8em;
+  margin-top: 6em;
   padding: 2em;
 }
 
@@ -53,10 +53,26 @@ section .square {
           animation: clock 2000ms linear infinite both;
 }
 
+section .home {
+  margin-top: 2em;
+  margin-bottom: 0%;
+  color: #707070;
+  text-align: center;
+  font-size: 18px;
+}
+
+section .home2 {
+  margin: 0;
+  color: #707070;
+  text-align: center;
+  font-size: 18px;
+  opacity: 0;
+}
+
 section p {
   color: #707070;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 section a {
@@ -85,7 +101,7 @@ nav .close-btn {
 }
 
 nav ul {
-  font-family: MV Boli;
+  font-family: 'Amatic SC', cursive;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -119,12 +135,6 @@ nav ul a {
           animation: slide-menu 0.2s ease-in forwards;
 }
 
-.show-menu .square {
-  display: none;
-  -webkit-animation: show-x 0.2s 0.2s forwards;
-          animation: show-x 0.2s 0.2s forwards;
-}
-
 .show-menu .close-btn {
   -webkit-animation: show-x 0.2s 0.2s forwards;
           animation: show-x 0.2s 0.2s forwards;
@@ -148,6 +158,52 @@ nav ul a {
 .show-menu li:nth-of-type(4) {
   -webkit-animation: menu-item-anim 0.1s forwards 0.5s ease-in-out;
           animation: menu-item-anim 0.1s forwards 0.5s ease-in-out;
+}
+
+.show-nothing .home {
+  -webkit-animation: text-disappear 0.5s forwards;
+          animation: text-disappear 0.5s forwards;
+}
+
+.show-nothing .home2 {
+  -webkit-animation: show-text 0.5s 0.5s forwards;
+          animation: show-text 0.5s 0.5s forwards;
+}
+
+@-webkit-keyframes text-disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes text-disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes show-text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show-text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes slide-menu {
