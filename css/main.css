@@ -165,8 +165,8 @@ nav ul a {
 }
 
 .show-nothing .home2 {
-  -webkit-animation: show-text 0.5s 0.5s forwards;
-          animation: show-text 0.5s 0.5s forwards;
+  -webkit-animation: show-text 2s 0.5s forwards;
+          animation: show-text 2s 0.5s forwards;
 }
 
 @-webkit-keyframes text-disappear {
@@ -188,20 +188,32 @@ nav ul a {
 }
 
 @-webkit-keyframes show-text {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  20% {
     opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
 @keyframes show-text {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  20% {
     opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
