@@ -15,8 +15,7 @@ header {
 }
 
 header a {
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding: 0;
   text-decoration: none;
   color: #707070;
 }
